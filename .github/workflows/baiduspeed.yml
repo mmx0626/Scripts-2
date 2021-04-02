@@ -1,13 +1,14 @@
 name: 百度极速版
+
 on:
-    workflow_dispatch:
-    schedule:
-      - cron: "2,32 * * * *"
-    watch:
-      types: [started]
+  workflow_dispatch:
+  schedule:
+     - cron: '2,32 * * * *'
+  watch:
+    types: started
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
         BAIDU_COOKIE: ${{ secrets.BAIDU_COOKIE }}
@@ -22,10 +23,10 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【百度极速版】'
+      - name: '运行 【百度极速】'
         if: env.BAIDU_COOKIE
         run: |
           node Task/baidu_speed.js
         env:
           BAIDU_CASH: ${{ secrets.BAIDU_CASH }}
-          BAIDU_COOKIE: ${{ secrets.BAIDU_COOKIE }}
+          BAIDU_TASK: ${{ secrets.BAIDU_TASK }}
