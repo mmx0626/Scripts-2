@@ -1,8 +1,8 @@
-name: 百度极速版
+name: baidu_speed@Sunert2
 on:
     workflow_dispatch:
     schedule:
-      - cron: "1,31 * * * *"
+      - cron: "2,32 * * * *"
     watch:
       types: [started]
 jobs:
@@ -29,3 +29,6 @@ jobs:
         env:
           BAIDU_CASH: ${{ secrets.BAIDU_CASH }}
           BAIDU_COOKIE: ${{ secrets.BAIDU_COOKIE }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
