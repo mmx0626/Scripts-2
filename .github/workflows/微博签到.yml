@@ -28,5 +28,3 @@ jobs:
         if: env.WB_TOKEN
         run: |
           node Task/weibo.js
-        env:
-          PUSH_KEY: ${{ secrets.PUSH_KEY}}
