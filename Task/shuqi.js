@@ -1,17 +1,14 @@
 /* ziye 
-github地址 https://github.com/ziye888
+github地址 https://github.com/6Svip120apk69
 TG频道地址  https://t.me/ziyescript
 TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
-boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs.json
+boxjs链接  https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/ziye.boxjs.json
 转载请备注个名字，谢谢
-
 ⚠️书旗小说     手机号账号数据共通， 部分任务可叠加，此脚本包含2个app的所有任务（无阅读挑战赛）共0.8-1元
 书旗普通版 支持多平台账号以及手机号登录     
 点击  https://apps.apple.com/cn/app/id733689509 下载APP 或者Appstore 搜索书旗小说 
-
 书旗极速版 支持手机号登录     
 点击  https://apps.apple.com/cn/app/id1540723488 下载APP 或者Appstore 搜索书旗小说极速版
-
 3.8  制作
 3.12 完成
 3.12-2 增加循环获取ck开关，默认关闭，调整阅读次数为20次
@@ -22,18 +19,12 @@ boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs
 3.15 修复收益获取ck显示
 3.18 独立COOKIE增加boxjs复制会话模式
 3.193.19 修复ac报错
-4.6.11 单刷时长请设置SC为1，增加通知以及推送控制
-4.6.19 精确时长ck判定，10秒以上才获取
-
 ⚠️ 时间设置    7 0-23 * * *    每小时 1次就行 
 ⚠️一共2个软件  普通版15条 极速版11条  共      26个ck  👉 26条 Secrets 
 有多少ck就运行多少任务   shuqiuserurlVal 用户名url 👉 这个ck必须获取
 多账号换行
-
 第一步 添加 hostname =render.shuqireader.com,ocean.shuqireader.com,jcollection.shuqireader.com,activity-center-web.shuqireader.com,
-
 第二步 ⚠️添加header重写 获取header  再注释header重写   添加body重写  获取body
-
     shuqiuserurlVal👉 用户名url    点击福利
     shuqisyurlVal👉  收益url       点击我的
     shuqisybodyVal👉 收益body      点击我的
@@ -64,72 +55,55 @@ boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs
 	
 ⚠️主机名以及header重写👇     header重写 和 body重写不可同时启用
 hostname =render.shuqireader.com,ocean.shuqireader.com,jcollection.shuqireader.com,activity-center-web.shuqireader.com, 
-
 ############## 圈x 
-
 #书旗小说获取header
-
 #用户名  视频任务 抽奖页面 极速版签到视频页   极速版视频任务
-https:\/\/ocean\.shuqireader\.com\/* url script-request-header https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
+https:\/\/ocean\.shuqireader\.com\/* url script-request-header https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
 #极速版书城
-http:\/\/activity-center-web\.shuqireader\.com\/* url script-request-header https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
-
+http:\/\/activity-center-web\.shuqireader\.com\/* url script-request-header https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
 #书旗小说获取body
 #阅读 签到  分享 奖励 收取奖励  抽奖次数 抽奖 极速版视频 极速版签到视频 极速版阅读 极速版签到 极速版分享 极速版书城
-https:\/\/ocean\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
+https:\/\/ocean\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
 #收益 任务 极速版任务
-https:\/\/render\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
+https:\/\/render\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
 #时长
-https:\/\/jcollection\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
-
+https:\/\/jcollection\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
 ############## loon
-
 #书旗小说获取header
-
 #用户名  视频任务 抽奖页面 极速版签到视频页   极速版视频任务
-http-request https:\/\/ocean\.shuqireader\.com\/* url script-request-header script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js, requires-header=true, tag=书旗小说获取header
+http-request https:\/\/ocean\.shuqireader\.com\/* url script-request-header script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js, requires-header=true, tag=书旗小说获取header
 #极速版书城
-http-request http:\/\/activity-center-web\.shuqireader\.com\/* url script-request-header script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js, requires-header=true, tag=书旗小说获取header
-
+http-request http:\/\/activity-center-web\.shuqireader\.com\/* url script-request-header script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js, requires-header=true, tag=书旗小说获取header
 #书旗小说获取body
-
 #阅读 签到  分享 奖励 收取奖励  抽奖次数 抽奖 极速版视频 极速版签到视频 极速版阅读 极速版签到 极速版分享 极速版书城
-http-request https:\/\/ocean\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
+http-request https:\/\/ocean\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
 #收益 任务 极速版任务
-http-request https:\/\/render\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
+http-request https:\/\/render\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
 #时长
-http-request https:\/\/jcollection\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
-
+http-request https:\/\/jcollection\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
 ############## surge
-
 #书旗小说获取header
-
 #用户名  视频任务 抽奖页面 极速版签到视频页   极速版视频任务
-书旗小说获取header = type=https:\/\/ocean\.shuqireader\.com\/*,script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
+书旗小说获取header = type=https:\/\/ocean\.shuqireader\.com\/*,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
 #极速版书城
-书旗小说获取header = type=http:\/\/activity-center-web\.shuqireader\.com\/*,script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
-
+书旗小说获取header = type=http:\/\/activity-center-web\.shuqireader\.com\/*,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
 #书旗小说获取body
-
 #阅读 签到  分享 奖励 收取奖励  抽奖次数 抽奖 视频 极速版视频 极速版签到视频 极速版阅读 极速版签到  极速版分享 极速版书城
-书旗小说获取header = type=https:\/\/ocean\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
+书旗小说获取header = type=https:\/\/ocean\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
 #收益 任务 极速版任务
-书旗小说获取header = type=https:\/\/render\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
+书旗小说获取header = type=https:\/\/render\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
 #时长
-书旗小说获取header = type=https:\/\/jcollection\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
-
-
+书旗小说获取header = type=https:\/\/jcollection\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
 */
-GXRZ = '4.6.19 精确时长ck判定，10秒以上才获取'
+GXRZ = '3.19 修复ac报错'
 const $ = Env("书旗小说");
 $.idx = ($.idx = ($.getval('shuqiSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
 const notify = $.isNode() ? require("./sendNotify") : ``;
 const COOKIE = $.isNode() ? require("./shuqiCOOKIE") : ``;
 const logs = 0; // 0为关闭日志，1为开启
-notifyttt = 1; // 0为关闭外部推送，1为12 23 点外部推送
-notifyInterval = 2; // 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
-Minutes = 10; // 通知 默认控制在0-10分内
-$.message = '', COOKIES_SPLIT = '', CASH = '', XH = 0, SC = 0, ddtime = '';
+const notifyttt = 1 // 0为关闭外部推送，1为12 23 点外部推送
+const notifyInterval = 3; // 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
+$.message = '', COOKIES_SPLIT = '', CASH = '', XH = 0, ddtime = '';
 CZ = 10
 Length = 0
 let shuqiuserurlArr = [];
@@ -227,12 +201,6 @@ if ($.isNode() && COOKIE.shuqiuserurlVal && COOKIE.shuqiuserurlVal != '') {
 }
 
 if ($.isNode() && process.env.SQ_shuqiuserURL) {
-
-SC = process.env.SQ_SC || "0";
-notifyttt = process.env.SQ_notifyttt || "1";
-notifyInterval = process.env.SQ_notifyInterval || "2";
-Minutes = process.env.SQ_Minutes || "10";
-
     COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
     console.log(
         `============ cookies分隔符为：${JSON.stringify(
@@ -507,12 +475,6 @@ if (COOKIE && COOKIE.shuqiuserurlVal) {
 }
 if (COOKIE.datas && COOKIE.datas[0].val != '') {
 
-
-notifyttt = (COOKIE.settings.find(item => item.id === `shuqinotifyttt`)).val || '1';
-notifyInterval = (COOKIE.settings.find(item => item.id === `shuqinotifyInterval`)).val || '2';
-Minutes = (COOKIE.settings.find(item => item.id === `shuqiMinutes`)).val || '10';
-SC = (COOKIE.settings.find(item => item.id === `shuqiSC`)).val || '0';
-
     shuqiCount = COOKIE.settings.find(item => item.id === `shuqiCount`);
     Length = shuqiCount.val
 }
@@ -521,7 +483,7 @@ if (COOKIE.shuqiuserurl) {
     COOKIEstringify = JSON.stringify(COOKIE);
     Length = COOKIEstringify.match(/getBindinfo/g).length
 }
-if (!COOKIE.datas && !COOKIE.shuqiuserurlVal && !COOKIE.shuqiuserurl) {
+if (!COOKIE.datas && !COOKIE.shuqiuserurlVal&& !COOKIE.shuqiuserurl) {
     if ($.isNode()) {
         Object.keys(middleshuqiuserURL).forEach((item) => {
             if (middleshuqiuserURL[item]) {
@@ -683,18 +645,6 @@ if (!COOKIE.datas && !COOKIE.shuqiuserurlVal && !COOKIE.shuqiuserurl) {
         // 根据boxjs中设置的额外账号数，添加存在的账号数据进行任务处理
         if ("shuqiXH") {
             XH = $.getval("shuqiXH") || '0';
-        }
-        if ("shuqinotifyttt") {
-            notifyttt = $.getval("shuqinotifyttt") || '1';
-        }
-        if ("shuqinotifyInterval") {
-            notifyInterval = $.getval("shuqinotifyInterval") || '2';
-        }
-        if ("shuqiMinutes") {
-           Minutes = $.getval("shuqiMinutes") || '10';
-        }
-        if ("shuqiSC") {
-            SC = $.getval("shuqiSC") || '0';
         }
         let shuqiCount = ($.getval('shuqiCount') || '1') - 0;
         for (let i = 2; i <= shuqiCount; i++) {
@@ -1073,9 +1023,7 @@ function GetCookie() {
     //获取时长
     if ($request && $request.url.indexOf("reading") >= 0 && $request.url.indexOf("upload") >= 0 && $request.body.indexOf("_public=skinId") >= 0) {
         const shuqiscbodyVal = $request.body;
-        sqsc = shuqiscbodyVal.split('readingLen%22%3A')[1].split('%7D')[0]
-
-if (shuqiscbodyVal&&sqsc>=10) {
+        if (shuqiscbodyVal) {
             if (XH == 1) {
                 cookie()
 
@@ -1092,18 +1040,18 @@ if (shuqiscbodyVal&&sqsc>=10) {
                     } else {
                         $.setdata(shuqiscbodyVal, "shuqiscbody" + $.idx);
                         $.log(
-                            `[${$.name + $.idx}] 获取${sqsc}秒时长shuqiscbodyVal✅: 成功,shuqiscbodyVal: ${shuqiscbodyVal}`
+                            `[${$.name + $.idx}] 获取时长shuqiscbodyVal✅: 成功,shuqiscbodyVal: ${shuqiscbodyVal}`
                         );
-                        $.msg($.name + $.idx, `获取${sqsc}秒时长shuqiscbodyVal: 成功🎉`, ``);
+                        $.msg($.name + $.idx, `获取时长shuqiscbodyVal: 成功🎉`, ``);
                         $.done();
                     };
                 }
             } else {
                 $.setdata(shuqiscbodyVal, "shuqiscbody" + $.idx);
                 $.log(
-                    `[${$.name + $.idx}] 获取${sqsc}秒时长shuqiscbodyVal✅: 成功,shuqiscbodyVal: ${shuqiscbodyVal}`
+                    `[${$.name + $.idx}] 获取时长shuqiscbodyVal✅: 成功,shuqiscbodyVal: ${shuqiscbodyVal}`
                 );
-                $.msg($.name + $.idx, `获取${sqsc}秒时长shuqiscbodyVal: 成功🎉`, ``);
+                $.msg($.name + $.idx, `获取时长shuqiscbodyVal: 成功🎉`, ``);
                 $.done();
             };
         }
@@ -1727,12 +1675,6 @@ function decodeUnicode(str) {
     str = str.replace(/\\/g, "%");
     return unescape(str);
 }
-//随机延迟
-function RT(X, Y) {
-    do rt = Math.floor(Math.random() * Y);
-    while (rt < X)
-    return rt;
-}
 let isGetCookie = typeof $request !== 'undefined'
 if (isGetCookie) {
     GetCookie()
@@ -1889,7 +1831,7 @@ async function all() {
             shuqijsbookbodyVal = COOKIE[Object.keys(COOKIE)[iv + 25]];
             shuqijssprwurlVal = COOKIE[Object.keys(COOKIE)[iv + 26]];
         }
-        if (!COOKIE.datas && !COOKIE.shuqiuserurlVal && !COOKIE.shuqiuserurl) {
+        if (!COOKIE.datas && !COOKIE.shuqiuserurlVal&& !COOKIE.shuqiuserurl) {
             shuqiuserurlVal = shuqiuserurlArr[i];
             shuqisyurlVal = shuqisyurlArr[i];
             shuqisybodyVal = shuqisybodyArr[i];
@@ -1930,30 +1872,26 @@ async function all() {
             await coin() //用户收益
         }
         await readlist(); //阅读时长
-
-        if (SC == 0) {
-            if (shuqirwbodyVal && shuqirwbodyVal != '') {
-                await resource() //任务列表
-            }
-            if (shuqisprwurlVal && shuqisprwurlVal != '') {
-                await videolist(); //视频任务
-            }
-            if (shuqicjyurlVal && shuqicjyurlVal != '') {
-                await lotteryinfo(); //抽奖页面
-            }
-            if (shuqijsrwbodyVal && shuqijsrwbodyVal != '') {
-                await jsresource() //极速版任务列表
-            }
-            if (shuqijssprwurlVal && shuqijssprwurlVal != '') {
-                await jsvideolist() //极速版视频任务
-            }
-            if (shuqijsqdspyurlVal && shuqijsqdspyurlVal != '') {
-                await jsqdvideolist(); //极速版签到视频任务
-            }
-            if (shuqijlbodyVal && shuqijlbodyVal != '') {
-                await bubble(); //奖励页面
-            }
-
+        if (shuqirwbodyVal && shuqirwbodyVal != '') {
+            await resource() //任务列表
+        }
+        if (shuqisprwurlVal && shuqisprwurlVal != '') {
+            await videolist(); //视频任务
+        }
+        if (shuqicjyurlVal && shuqicjyurlVal != '') {
+            await lotteryinfo(); //抽奖页面
+        }
+        if (shuqijsrwbodyVal && shuqijsrwbodyVal != '') {
+            await jsresource() //极速版任务列表
+        }
+        if (shuqijssprwurlVal && shuqijssprwurlVal != '') {
+            await jsvideolist() //极速版视频任务
+        }
+        if (shuqijsqdspyurlVal && shuqijsqdspyurlVal != '') {
+            await jsqdvideolist(); //极速版签到视频任务
+        }
+        if (shuqijlbodyVal && shuqijlbodyVal != '') {
+            await bubble(); //奖励页面
         }
         console.log(`${GXRZ}\n`);
         $.message += `${GXRZ}\n`
@@ -1962,12 +1900,10 @@ async function all() {
 //通知
 function msgShow() {
     return new Promise(async resolve => {
-
-
         if (notifyInterval != 1) {
             console.log($.name + '\n' + $.message);
         }
-        if (notifyInterval == 1 ) {
+        if (notifyInterval == 1) {
             $.msg($.name, ``, $.message);
         }
         if (notifyInterval == 2 && (nowTimes.getHours() === 12 || nowTimes.getHours() === 23) && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 10)) {
@@ -2383,22 +2319,12 @@ function readlist(timeout = 0) {
                         if (shuqiscbodyVal && shuqiscbodyVal != '') {
                             timestamp = shuqiscbodyVal.split('timestamp=')[1].split('&user_id')[0] * 1000
                             sqsc = shuqiscbodyVal.split('readingLen%22%3A')[1].split('%7D')[0]
-                            if (timestamp >= daytime() && $.readlist.data.readTime < 10) {
-                                DD = RT(1000, 10000)
-                                console.log(`随机延迟${DD/1000}秒`)
-                                await $.wait(DD)
+                            if (timestamp >= daytime() && $.readlist.data.readTime < 180) {
                                 await upload() //上传时长
-                                DD = RT(1000, 10000)
-                                console.log(`随机延迟${DD/1000}秒`)
-                                await $.wait(DD)
+                                await $.wait(10000)
                                 await upload() //上传时长
-                                DD = RT(1000, 10000)
-                                console.log(`随机延迟${DD/1000}秒`)
-                                await $.wait(DD)
+                                await $.wait(10000)
                                 await upload() //上传时长
-                            } else if (timestamp >= daytime()) {
-                                console.log(`上传时长：今日时长已达到10分钟\n`);
-                                $.message += `【上传时长】：今日时长已达到10分钟\n`;
                             } else {
                                 console.log(`上传时长：请获取今日时长CK\n`);
                                 $.message += `【上传时长】：请获取今日时长CK\n`;
