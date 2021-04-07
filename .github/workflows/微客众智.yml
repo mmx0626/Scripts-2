@@ -3,7 +3,7 @@ name: 微客众智
 on:
   workflow_dispatch:
   schedule:
-     - cron: '7 17-2,5,8,11,14 * * *'
+     - cron: '7 */2 * * *'
   watch:
     types: started
 jobs:
