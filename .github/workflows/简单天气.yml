@@ -1,4 +1,4 @@
-name: 书旗小说
+name: 简单天气
 
 on:
   workflow_dispatch:
