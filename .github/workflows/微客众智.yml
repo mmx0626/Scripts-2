@@ -12,7 +12,6 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     env:
          WKZZ_HD: ${{ secrets.WKZZ_HD }}
-         TZ: Asia/shanghai
     steps:
       - name: Checkout
         run: |
