@@ -13,6 +13,7 @@ jobs:
     env:
         RLURL: ${{ secrets.RLURL }}
         RLHEADER: ${{ secrets.RLHEADER }}
+        RLCASH: ${{ secrets.RLCASH }}
 
     steps:
       - name: Checkout
