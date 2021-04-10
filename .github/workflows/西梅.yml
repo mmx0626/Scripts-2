@@ -3,7 +3,7 @@ name: 西梅
 on:
   workflow_dispatch:
   schedule:
-     - cron: '13 0 * * *'
+     - cron: '13 17-22 * * *'
   watch:
     types: ximei
 jobs:
