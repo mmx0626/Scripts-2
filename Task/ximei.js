@@ -194,7 +194,7 @@ function ximeidz(timeout = 0) {
 tid = md5(`action_time=${times}&action_type=105&business_id=${id}&secret=${st}`)
 let url = {
         url : "https://app.hubonews.com/v1/activity/points/update",
-        headers : JSON.parse(ximeihd),
+//        headers : JSON.parse(ximeihd),
         body : `{"sign":"${tid}","action_time":${times},"business_id":"${id}","action_type": 105}`,
 }
       $.post(url, async (err, resp, data) => {
@@ -296,7 +296,7 @@ function ximeisp(timeout = 0) {
 tid = md5(`action_time=${times}&action_type=102&business_id=${id}&secret=${st}`)
 let url = {
         url : "https://app.hubonews.com/v1/activity/points/update",
-        headers : JSON.parse(ximeihd),
+//        headers : JSON.parse(ximeihd),
         body : `{"sign":"${tid}","action_time":${times},"business_id":"${id}","action_type": 102}`,
 }
       $.post(url, async (err, resp, data) => {
@@ -329,7 +329,7 @@ function ximeifx(timeout = 0) {
 tid = md5(`action_time=${times}&action_type=103&business_id=${id}&secret=${st}`)
 let url = {
         url : "https://app.hubonews.com/v1/activity/points/update",
-        headers : JSON.parse(ximeihd),
+//        headers : JSON.parse(ximeihd),
         body : `{"sign":"${tid}","action_time":${times},"business_id":"${id}","action_type": 103}`,
 }
       $.post(url, async (err, resp, data) => {
