@@ -5,26 +5,23 @@ on:
   schedule:
      - cron: '7 16,19,22,1,4,7-13 * * *'
   watch:
-    types: started
+    types: wkzz
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-         WKZZ_HD: ${{ secrets.WKZZ_HD }}
+        WKZZ_HD: ${{ secrets.WKZZ_HD }}
     steps:
-      - name: Checkout
-        run: |
-          git clone https://github.com/Lxg2/Scripts.git ~/Scripts
-      - name: Use Node.js 12.x
+      - uses: actions/checkout@v1
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
-      - name: npm install
+          node-version: 14.x
+      - name: 安装依赖项
         run: |
-          cd ~/Scripts
           npm install
-      - name: '运行 【微客众智】'     
+      - name: '运行 【微客众智】'
+        if: env.WKZZ_HD
         run: |
-          cd ~/Scripts
           node Task/wkzz.js
