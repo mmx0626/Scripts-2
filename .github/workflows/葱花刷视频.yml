@@ -2,15 +2,15 @@ name: 葱花自动刷视频
 
 on:
   workflow_dispatch:
-  # 目前运行3000金币左右上限
   schedule:
-     - cron: '9 0,3,6,9 * * *'
+     - cron: '0 0,3,6,9 * * *'
   watch:
     types: started
 jobs:
   build:
     env:
       RONGHUA_VIDEO: ${{ secrets.RONGHUA_VIDEO }}
+      RONGHUA_VIDEO2: ${{ secrets.RONGHUA_VIDEO2 }}
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
@@ -22,9 +22,16 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【葱花视频-视频阅读】'
+      - name: '运行 【葱花视频账号1-视频阅读】'
         if: env.RONGHUA_VIDEO
         run: |
-          node Task/RONGHUA_VIDEO.js
+          node RONGHUA_VIDEO.js
         env:
           RONGHUA_VIDEO: ${{ secrets.RONGHUA_VIDEO }}
+
+      - name: '运行 【葱花视频账号1-视频阅读2】'
+        if: env.RONGHUA_VIDEO2
+        run: |
+          node RONGHUA_VIDEO.js
+        env:
+          RONGHUA_VIDEO: ${{ secrets.RONGHUA_VIDEO2 }}
