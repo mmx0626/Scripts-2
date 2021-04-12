@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   # 目前运行3000金币左右上限
   schedule:
-     - cron: '*/45 * * * *'
+     - cron: '9 0,3,6,9 * * *'
   watch:
     types: started
 jobs:
