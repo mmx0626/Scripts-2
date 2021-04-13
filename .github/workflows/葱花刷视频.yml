@@ -3,7 +3,7 @@ name: 葱花自动刷视频
 on:
   workflow_dispatch:
   schedule:
-     - cron: '0 0,3,6,9 * * *'
+     - cron: '0 */3 * * *'
   watch:
     types: started
 jobs:
