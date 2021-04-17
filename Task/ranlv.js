@@ -1,28 +1,9 @@
 /*
-tgchannel：https://t.me/ZhiYi_Script
-github：https://github.com/ZhiYi-N/script
-boxjs：https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/ZhiYi-N.boxjs.json
-转载留个名字，谢谢
 作者：执意ZhiYi-N
-#看一个视频获取ck
 目前包含：
 看视频奖励、分享奖励
 点赞视频奖励、评论视频奖励
 榜单投票、榜单抽奖、脱口秀投票
-[mitm]
-hostname = ranlv.lvfacn.com
-#圈x 
-[rewrite local]
-https://ranlv.lvfacn.com/api.php/Common/pvlog url script-request-header https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/ranlv.js
-
-
-#loon
-http-request https://ranlv.lvfacn.com/api.php/Common/pvlog script-path=https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/ranlv.js, requires-body=true, timeout=10, tag=燃旅视频
-
-
-#surge
-燃旅视频 = type=http-request,pattern=^https://ranlv.lvfacn.com/api.php/Common/pvlog,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/ranlv.js,script-update-interval=0
-
 */
 const zhiyi = '燃旅视频'
 const $ = Env(zhiyi)
