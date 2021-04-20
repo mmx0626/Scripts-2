@@ -1,9 +1,9 @@
-# 已禁用阅读任务，其他可行
+# 已禁用阅读任务，其它可正常运行
 name: 聚看点
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/20 */2 * * *'
+     - cron: '6,36 0-10 * * *'
   watch:
     types: started
 jobs:
