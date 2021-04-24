@@ -1,1 +1,1 @@
-# 不要fork，谢谢
+* 部分带有cookie，不要fork
